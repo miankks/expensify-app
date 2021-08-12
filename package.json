@@ -24,6 +24,7 @@
     "express": "4.15.4",
     "extract-text-webpack-plugin": "3.0.0",
     "moment": "2.18.1",
+    "node": "^16.6.1",
     "node-sass": "^6.0.1",
     "normalize.css": "^7.0.0",
     "react": "^17.0.2",
@@ -47,5 +48,9 @@
     "jest": "20.0.4",
     "webpack-dev-server": "^2.5.1",
     "react-test-renderer": "15.6.1"
+  },
+  "engines": {
+    "node": "12.16.1",
+    "npm": "6.14.4"
   }
 }
