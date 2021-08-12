@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "chalk": "^4.1.2",
-    "enzyme": "2.9.1s",
+    "enzyme": "2.9.1",
     "enzyme-to-json": "1.5.1",
     "jest": "20.0.4",
     "webpack-dev-server": "^2.5.1",
