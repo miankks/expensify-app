@@ -20,7 +20,6 @@ class ExpenseListFilters extends Component {
         this.setState(() => ({ calendarFocused }))
     }
     render() {
-        // console.log(this.props.filters)
         return (
             <div>
             <input 

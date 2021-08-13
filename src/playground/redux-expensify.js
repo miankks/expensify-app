@@ -213,8 +213,3 @@ const user = {
     name: 'Mian',
     age: '26'
 }
-
-// console.log({
-//     ...user,
-//     location: 'Stockholm'
-// })

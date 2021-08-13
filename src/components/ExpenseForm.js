@@ -3,9 +3,7 @@ import moment from 'moment';
 import { SingleDatePicker } from 'react-dates';
 import 'react-dates/lib/css/_datepicker.css';
 
-// const date = new Date();
 const now = moment();
-// console.log(now.format('MMM Do, YYYY'));
 
 export default class ExpenseForm extends Component {
     constructor (props) {
@@ -27,7 +25,6 @@ export default class ExpenseForm extends Component {
     }
 
     onNoteChange = (e) => {
-        // const note = e.target.value
         e.persist() // used to avoid warning for using e.target.value directly in setState callback 
         this.setState(() => ({ note: e.target.value }))
     }

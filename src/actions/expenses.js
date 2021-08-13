@@ -4,7 +4,6 @@ import uuid from 'uuid';
 export const addExpense = (
     {
         description = '',
-        // description = 'rent',
         note = '',
         amount  =0,
         createdAt = 0

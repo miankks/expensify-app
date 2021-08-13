@@ -26,7 +26,6 @@ const setCount = ( {setCountBy = 1} = {}) => ({
 const countReducer = (state = { count: 0}, action) => {
     switch (action.type) {
         case 'INCREMENT':
-            // const incrementBy = typeof action.incrementBy === 'number' ? action.incrementBy : 1
             return {
                 count: state.count + action.incrementBy
             }
@@ -68,35 +67,4 @@ const store = createStore(countReducer);
     store.dispatch(decrementCount())
     
     store.dispatch(setCount({setCountBy: 105}))
-    
-    
-    
-    
-
-    // store.dispatch({
-        //     type: 'RESET'
-        // });
-        
-        // store.dispatch({
-            //     type: 'DECREMENT',
-            //     decrementBy: 5
-            // });
-            
-            // store.dispatch({
-                //     type: 'DECREMENT',
-                // });
-                
-                // store.dispatch({
-                    //     type: 'INCREMENT',
-                    //     incrementBy: 5
-                    // });
-                    // const incremetCount = () => {
-                    //     return {
-                    //         type: 'INCREMENT'
-                    //     }
-                    // }
-                    
-                    // const incrementCount = (payload = {}) =>( {
-                    //         type: 'INCREMENT',
-                    //         incrementBy: typeof payload.incrementBy === 'number'? payload.incrementBy : 1
-                    // })
+ 
