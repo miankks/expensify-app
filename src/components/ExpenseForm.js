@@ -25,42 +25,43 @@ export default class ExpenseForm extends Component {
     }
 
     onNoteChange = (e) => {
-        e.persist() // used to avoid warning for using e.target.value directly in setState callback 
-        this.setState(() => ({ note: e.target.value }))
+        // e.persist() // used to avoid warning for using e.target.value directly in setState callback 
+        // this.setState(() => ({ note: e.target.value }))
+        const note = e.target.value;
+        this.setState(() => ({ note }));
     }
 
     onAmountChange = (e) => {
-        const amount = e.target.value
-        if (amount.match(/^\d{1,}(\.\d{0,2})?$/)) {
-             this.setState(() => ({ amount }));
+        const amount = e.target.value;
+    
+        if (!amount || amount.match(/^\d{1,}(\.\d{0,2})?$/)) {
+          this.setState(() => ({ amount }));
         }
-    }
-
-    onDateChange = (createdAt) => {
+      };
+      onDateChange = (createdAt) => {
         if (createdAt) {
-            this.setState(() =>({ createdAt }))
+          this.setState(() => ({ createdAt }));
         }
-    }
-
-    onFocusChange = ({ focused }) => {
-        this.setState(() => ({ calendarFocused: focused }))
-    }
+      };
+      onFocusChange = ({ focused }) => {
+        this.setState(() => ({ calendarFocused: focused }));
+      };
 
     onSubmit = (e) => {
-        e.preventDefault();
+    e.preventDefault();
 
-        if (!this.state.description || !this.state.amount) {
-            this.setState(() => ({ error: 'Please provide description and amount.'}))
-        } else {
-            this.setState(() => ({ error: ''}))
-            this.props.onSubmit({
-                description: this.state.description,
-                amount: parseFloat(this.state.amount, 10) * 100,
-                createdAt: this.state.createdAt.valueOf(),
-                note: this.state.note
-            })
-        }
+    if (!this.state.description || !this.state.amount) {
+      this.setState(() => ({ error: 'Please provide description and amount.' }));
+    } else {
+      this.setState(() => ({ error: '' }));
+      this.props.onSubmit({
+        description: this.state.description,
+        amount: parseFloat(this.state.amount, 10) * 100,
+        createdAt: this.state.createdAt.valueOf(),
+        note: this.state.note
+      });
     }
+  };
 
     render() {
         return (
