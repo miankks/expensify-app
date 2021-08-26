@@ -17,6 +17,9 @@ const HooksHeader = () => {
             <Link to='/noteusestate'>
                 <h3>Note useState</h3>
             </Link>
+            <Link to='/notesuseReducer'>
+                <h3>Use od useReducer</h3>
+            </Link>
         </div>
     )
 }
