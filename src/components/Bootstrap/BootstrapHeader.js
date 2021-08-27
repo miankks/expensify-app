@@ -45,9 +45,9 @@ export default class BootstrapHeader extends Component {
                       </button>
                       <div class="dropdown-menu">
                         <Link className="dropdown-item" to="/buttons">3.2 Buttons</Link>
-                        <a class="dropdown-item" href="3_3_navbar.html">3.3 Navbar</a>
-                        <a class="dropdown-item" href="3_4_list_groups_badges.html">3.4 List Groups & Badges</a>
-                        <a class="dropdown-item" href="3_5_forms.html">3.5 Forms</a>
+                        <Link class="dropdown-item" to="/navbars">3.3 Navbar</Link>
+                        <Link class="dropdown-item" to="/listgroups">3.4 List Groups & Badges</Link>
+                        <Link class="dropdown-item" to="/forms">3.5 Forms</Link>
                         <a class="dropdown-item" href="3_6_input_groups.html">3.6 Input Groups</a>
                         <a class="dropdown-item" href="3_7_alerts_progress.html">3.7 Alerts & Progress</a>
                         <a class="dropdown-item" href="3_8_tables_pagination.html">3.8 Tables & Pagination</a>

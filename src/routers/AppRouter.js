@@ -23,6 +23,9 @@ import ColorBackground from '../components/Bootstrap/Typography/ColorBackground'
 import MarginPadding from '../components/Bootstrap/Typography/MarginPadding';
 import SizingBorders from '../components/Bootstrap/Typography/SizingBorders';
 import Buttons from '../components/Bootstrap/CSSComponents/Buttons';
+import Navbars from '../components/Bootstrap/CSSComponents/Navbars';
+import ListGroups from '../components/Bootstrap/CSSComponents/ListGroups';
+import Forms from '../components/Bootstrap/CSSComponents/Forms';
 
 export const history = createHistory();
 
@@ -41,7 +44,10 @@ const AppRouter = () => (
         <PrivateRoute path="/dashboard" component={ExpenseDashboardPage} />
         <PrivateRoute path="/edit/:id" component={EditExpensePage} />
         <PrivateRoute path="/floatfixedposition" component={FloatFixedPosition}/>
+        <PrivateRoute path="/forms" component={Forms} />
+        <PrivateRoute path="/listgroups" component={ListGroups}/>
         <PrivateRoute path="/marginpadding" component={MarginPadding}/>
+        <PrivateRoute path="/navbars" component={Navbars}/>
         <PrivateRoute path="/newhooks" component={HooksHeader}/>
         <PrivateRoute path="/noteusestate" component={NoteApp} />
         <PrivateRoute path="/notesuseReducer" component={UseReducer} />
