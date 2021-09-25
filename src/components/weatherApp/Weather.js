@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, makeStyles } from '@material-ui/core';
 import Form from './Form';
-// import logo from "./images/bg.png";
 
 const useStyles = makeStyles({
   component: {

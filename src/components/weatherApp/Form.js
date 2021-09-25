@@ -40,16 +40,6 @@ const Form = () => {
     handleClick(false);
   }, [click]);
 
-  //   useEffect(() => {
-  //     const getWeather = async () => {
-  //       await getWeatherData(city, country).then((res) => {
-  //         useWeatherData(res.data);
-  //       });
-  //       getWeather();
-  //       handeClick(false)
-  //     };
-  //   }, [click]);
-
   const handleCityChange = (value) => {
     setCity(value);
   };
@@ -82,6 +72,3 @@ const Form = () => {
 };
 
 export default Form;
-
-// <TextField id="filled-basic" label="Filled" variant="filled" />
-// <TextField id="standard-basic" label="Standard" variant="standard" />
