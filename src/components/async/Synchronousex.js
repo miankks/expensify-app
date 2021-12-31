@@ -24,9 +24,9 @@ export default function Synchronousex() {
               setTimeout(() => {
                 console.log(`${stocks.holder[0]} was selected.`);
                 setTimeout(() => {
-                  console.log(`${stocks.toppings[0]} was added`);
+                  console.log(`${stocks.toppings[0]} was added.`);
                   setTimeout(() => {
-                    console.log('Icecream was served');
+                    console.log('Icecream was served.');
                   }, 2000);
                 }, 3000);
               }, 2000);
