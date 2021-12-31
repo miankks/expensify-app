@@ -1,7 +1,7 @@
-import React from "react";
-import { connect } from "react-redux";
-import { Link } from "react-router-dom";
-import { startLogout } from "../actions/auth";
+import React from 'react';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { startLogout } from '../actions/auth';
 
 export const Header = ({ startLogout }) => (
   <header className="header">
@@ -15,6 +15,9 @@ export const Header = ({ startLogout }) => (
         </Link>
         <Link className="header__title" to="/bootstrapheader">
           <h3>Bootstrap</h3>
+        </Link>
+        <Link className="header__title" to="/synchronousexample">
+          <h3>Synchronous Calls</h3>
         </Link>
         <Link className="header__title" to="/weatherapp">
           <h3>Weather App</h3>
