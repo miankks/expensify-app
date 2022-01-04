@@ -1,5 +1,5 @@
 import React from 'react';
-import { stocks } from './rawMaterial';
+import { stocks } from './RAWMATERIAL';
 
 export default function Synchronousex() {
   const setCallbackMethod = () => {
@@ -13,8 +13,9 @@ export default function Synchronousex() {
     };
 
     let production = () => {
-      setTimeout(() => {
+      return setTimeout(() => {
         console.log('Production has started');
+        <div>Hello</div>;
         setTimeout(() => {
           console.log('The food has been chopped');
           setTimeout(() => {
@@ -37,7 +38,6 @@ export default function Synchronousex() {
     };
     order(0, production);
   };
-
   return (
     <div>
       <p>Call and check console</p>

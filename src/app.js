@@ -13,6 +13,7 @@ import { firebase } from './firebase/firebase';
 import LoadingPage from './components/LoadingPage';
 
 const store = configureStore();
+console.warn = () => {};
 
 const jsx = (
   <Provider store={store}>

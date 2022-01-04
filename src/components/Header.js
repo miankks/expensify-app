@@ -19,6 +19,13 @@ export const Header = ({ startLogout }) => (
         <Link className="header__title" to="/synchronousexample">
           <h3>Synchronous Calls</h3>
         </Link>
+        <Link className="header__title" to="/promises">
+          <h3>Promises</h3>
+        </Link>
+        <Link className="header__title" to="/asyncawait">
+          <h3>Async await</h3>
+        </Link>
+
         <Link className="header__title" to="/weatherapp">
           <h3>Weather App</h3>
         </Link>

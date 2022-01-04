@@ -28,6 +28,8 @@ import ListGroups from '../components/Bootstrap/CSSComponents/ListGroups';
 import Forms from '../components/Bootstrap/CSSComponents/Forms';
 import Weather from '../components/weatherApp/Weather';
 import Synchronousex from '../components/async/synchronousex';
+import Promises from '../components/async/promises';
+import Asyncawait from '../components/async/ayncawait';
 
 export const history = createHistory();
 
@@ -58,6 +60,8 @@ const AppRouter = () => (
         <PrivateRoute path="/typography" component={TypoGraphy} />
         <PrivateRoute path="/textalignmndisplay" component={TextAlignmntDisplay} />
         <PrivateRoute path="/synchronousexample" component={Synchronousex} />
+        <PrivateRoute path="/promises" component={Promises} />
+        <PrivateRoute path="/asyncawait" component={Asyncawait} />
         <Route path="/help" component={HelpPage} />
       </Switch>
     </div>
