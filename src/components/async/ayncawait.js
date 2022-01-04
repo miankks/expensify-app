@@ -2,47 +2,42 @@ import React, { useEffect } from 'react';
 import { stocks } from './RAWMATERIAL';
 
 export default function Asyncawait() {
-  let isShopOpen = true;
-  let onOrder = () => {
-    let order = async () => {
-      try {
-        await abc();
-        console.log('try block.');
-      } catch (error) {
-        console.log("abc doesn't exist", error);
-      } finally {
-        console.log('runs code anyway.');
-      }
-    };
-  };
-
+  let isShopOpen = false;
   useEffect(() => {
-    const otherTasks = () => {
-      console.log('Doing the dishes');
-      console.log('Cleaning tables');
-      console.log('taking other orders.');
-    };
-    let toppingsChoice = () => {
+    let time = (ms) => {
       return new Promise((resolve, reject) => {
-        setTimeout(() => {
-          resolve(console.log('Which topping whould you love to add?'));
-        }, 3000);
+        if (isShopOpen) {
+          setTimeout(resolve, ms);
+        } else {
+          reject(console.log('Shop is closed.'));
+        }
       });
     };
-    let kitchen = async () => {
-      console.log('1');
-      console.log('2');
-      console.log('3');
-      await toppingsChoice();
-      console.log('4');
-      console.log('5');
+    const kitchen = async () => {
+      try {
+        await time(2000);
+        console.log(`${stocks.fruits[3]}`);
+        await time(1000);
+        console.log('Starts the production.');
+        await time(2000);
+        console.log('Fruit chopped.');
+        await time(1000);
+        console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} added.`);
+        await time(1000);
+        console.log('Machin has been started.');
+        await time(2000);
+        console.log(`${stocks.holder[1]} is selected.`);
+        await time(3000);
+        console.log(`${stocks.toppings[0]} is added as toppings`);
+        await time(1000);
+        console.log('Ice cream served.');
+      } catch (error) {
+        console.log('customer left', error);
+      } finally {
+        console.log('Day ended, Shop is closed.');
+      }
     };
-    {
-      kitchen();
-    }
-    {
-      otherTasks();
-    }
+    kitchen();
   });
   return (
     <div>
@@ -50,56 +45,3 @@ export default function Asyncawait() {
     </div>
   );
 }
-// {onOrder()}
-
-// import React, { Component } from 'react';
-// import { stocks } from './RAWMATERIAL';
-
-// export default class Asyncawait extends Component {
-//   render() {
-//     let isShopOpen = true;
-
-//     let onOrder = () => {
-//       let order = async () => {
-//         try {
-//           await abc();
-//           console.log('try block.');
-//         } catch (error) {
-//           console.log("abc doesn't exist", error);
-//         } finally {
-//           console.log('runs code anyway.');
-//         }
-//       };
-//     };
-
-//     const otherTasks = () => {
-//       console.log('Doing the dishes');
-//       console.log('Cleaning tables');
-//       console.log('taking other orders.');
-//     };
-//     let toppingsChoice = () => {
-//       return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//           resolve(console.log('Which topping whould you love to add?'));
-//         }, 3000);
-//       });
-//     };
-
-//     let kitchen = async () => {
-//       console.log('1');
-//       console.log('2');
-//       console.log('3');
-//       await toppingsChoice();
-//       console.log('4');
-//       console.log('5');
-//     };
-//     return (
-//       <div>
-//         <h3>Async await</h3>
-//         {kitchen()}
-//         {otherTasks()}
-//       </div>
-//     );
-//   }
-// }
-// {onOrder()}
