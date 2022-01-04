@@ -2,9 +2,9 @@ import React from 'react';
 import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
 // import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
-import ExpenseDashboardPage from '../components/ExpenseDashboardPage';
-import AddExpensePage from '../components/AddExpensePage';
-import EditExpensePage from '../components/EditExpensePage';
+import ExpenseDashboardPage from '../components/ExpensifyApp/ExpenseDashboardPage';
+import AddExpensePage from '../components/ExpensifyApp/AddExpensePage';
+import EditExpensePage from '../components/ExpensifyApp/EditExpensePage';
 import HelpPage from '../components/HelpPage';
 import HooksHeader from '../components/newHooks/HooksHeader';
 import LoginPage from '../components/LoginPage';
@@ -30,6 +30,7 @@ import Weather from '../components/weatherApp/Weather';
 import Synchronousex from '../components/async/synchronousex';
 import Promises from '../components/async/promises';
 import Asyncawait from '../components/async/ayncawait';
+import Index from '../components/HomePage';
 
 export const history = createHistory();
 
@@ -38,6 +39,7 @@ const AppRouter = () => (
     <div>
       <Switch>
         <PublicRoute path="/" component={LoginPage} exact={true} />
+        <PrivateRoute path="/homepage" component={Index} />
         <PrivateRoute path="/bootstrapheader" component={BootstrapHeader} />
         <PrivateRoute path="/buttons" component={Buttons} />
         <PrivateRoute path="/colorbackground" component={ColorBackground} />

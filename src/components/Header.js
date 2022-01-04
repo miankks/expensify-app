@@ -7,28 +7,10 @@ export const Header = ({ startLogout }) => (
   <header className="header">
     <div className="content-container">
       <div className="header__content">
-        <Link className="header__title" to="/dashboard">
-          <h1>Expensify</h1>
+        <Link className="header__title" to="/homepage">
+          <h1>Home</h1>
         </Link>
-        <Link className="header__title" to="/newhooks">
-          <h3>New Hooks</h3>
-        </Link>
-        <Link className="header__title" to="/bootstrapheader">
-          <h3>Bootstrap</h3>
-        </Link>
-        <Link className="header__title" to="/synchronousexample">
-          <h3>Synchronous Calls</h3>
-        </Link>
-        <Link className="header__title" to="/promises">
-          <h3>Promises</h3>
-        </Link>
-        <Link className="header__title" to="/asyncawait">
-          <h3>Async await</h3>
-        </Link>
-
-        <Link className="header__title" to="/weatherapp">
-          <h3>Weather App</h3>
-        </Link>
+        <h3 className="header__title">Welcome to my portfolio</h3>
 
         <button className="button button--link" onClick={startLogout}>
           Logout
@@ -47,3 +29,26 @@ export default connect(undefined, mapDispatchToProps)(Header);
 // <NavLink to="/dashboard" activeClassName="is-active">
 // <h1>Expensify</h1>
 // </NavLink>
+
+// <Link className="header__title" to="/dashboard">
+//   <h3>Expensify</h3>
+// </Link>
+// <Link className="header__title" to="/newhooks">
+//   <h3>New Hooks</h3>
+// </Link>
+// <Link className="header__title" to="/bootstrapheader">
+//   <h3>Bootstrap</h3>
+// </Link>
+// <Link className="header__title" to="/synchronousexample">
+//   <h3>Synchronous Calls</h3>
+// </Link>
+// <Link className="header__title" to="/promises">
+//   <h3>Promises</h3>
+// </Link>
+// <Link className="header__title" to="/asyncawait">
+//   <h3>Async await</h3>
+// </Link>
+
+// <Link className="header__title" to="/weatherapp">
+//   <h3>Weather App</h3>
+// </Link>
