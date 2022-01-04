@@ -1,4 +1,4 @@
-export let stocks = {
+export const stocks = {
   fruits: ['Strawberry', 'grapes', 'banana', 'apple'],
   liquid: ['water', 'ice'],
   holder: ['cone', 'cup', 'stic'],
