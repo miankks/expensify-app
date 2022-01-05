@@ -32,6 +32,8 @@ import Promises from '../components/async/promises';
 import Asyncawait from '../components/async/ayncawait';
 import Index from '../components/HomePage';
 import BirthdayReminder from '../components/BirthdayReminder/BirthdayReminder';
+import ToursMainPage from '../components/NineProjects/Tours/ToursMainPage';
+import ReviewMain from '../components/NineProjects/Reviews/ReviewMain';
 
 export const history = createHistory();
 
@@ -66,6 +68,8 @@ const AppRouter = () => (
         <PrivateRoute path="/promises" component={Promises} />
         <PrivateRoute path="/asyncawait" component={Asyncawait} />
         <PrivateRoute path="/birthdayreminder" component={BirthdayReminder} />
+        <PrivateRoute path="/toursapp" component={ToursMainPage} />
+        <PrivateRoute path="/reviewsapp" component={ReviewMain} />
         <Route path="/help" component={HelpPage} />
       </Switch>
     </div>

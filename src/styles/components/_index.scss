@@ -25,6 +25,11 @@
     }
 }
 
+.icon__title:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .col-container {
     display: flex; /* Make the container element behave like a table */
     width: 100%; /* Set full-width to expand the whole page */
@@ -41,8 +46,17 @@
       text-align: center;
   }
 
+  .lightblue-background:hover {
+    background: rgb(31, 109, 135);
+}
+
   .lightgrey-background {
     background: lightgray;
+    text-align: center;
+}
+
+.lightgrey-background:hover {
+    background: rgb(79, 76, 76);
     text-align: center;
 }
 
