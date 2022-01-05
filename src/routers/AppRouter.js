@@ -31,6 +31,7 @@ import Synchronousex from '../components/async/synchronousex';
 import Promises from '../components/async/promises';
 import Asyncawait from '../components/async/ayncawait';
 import Index from '../components/HomePage';
+import BirthdayReminder from '../components/BirthdayReminder/BirthdayReminder';
 
 export const history = createHistory();
 
@@ -64,6 +65,7 @@ const AppRouter = () => (
         <PrivateRoute path="/synchronousexample" component={Synchronousex} />
         <PrivateRoute path="/promises" component={Promises} />
         <PrivateRoute path="/asyncawait" component={Asyncawait} />
+        <PrivateRoute path="/birthdayreminder" component={BirthdayReminder} />
         <Route path="/help" component={HelpPage} />
       </Switch>
     </div>

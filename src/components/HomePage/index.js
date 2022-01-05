@@ -48,14 +48,14 @@ export default class Index extends Component {
               <h3>Weather App</h3>
             </Link>
           </div>
-          <div className="col lightgrey-background invisible-divs"></div>
+          <div className="col lightgrey-background">
+            <Link className="icon__title" to="/birthdayreminder">
+              <h3>Birthday Reminder</h3>
+            </Link>
+          </div>
           <div className="col lightblue-background invisible-divs"></div>
         </div>
       </div>
     );
   }
 }
-
-// <Link className="icon__title" to="/dashboard">
-// <h3>Expensify</h3>
-// </Link>
