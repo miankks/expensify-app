@@ -55,14 +55,14 @@ export default class Index extends Component {
           </div>
           <div className="col lightblue-background">
             <Link className="icon__title" to="/toursapp">
-              <h3>Reviews App</h3>
+              <h3>Tour App</h3>
             </Link>
           </div>
         </div>
         <div className="col-container">
           <div className="col lightblue-background">
             <Link className="icon__title" to="/reviewsapp">
-              <h3>Weather App</h3>
+              <h3>Reviews App</h3>
             </Link>
           </div>
           <div className="col lightgrey-background invisible-divs">
