@@ -70,7 +70,23 @@ export default class Index extends Component {
               <h3>Accordian Question Answers</h3>
             </Link>
           </div>
-
+          <div className="col lightblue-background">
+            <Link className="icon__title" to="/foodmenu">
+              <h3>Food Menu App</h3>
+            </Link>
+          </div>
+        </div>
+        <div className="col-container">
+          <div className="col lightblue-background invisible-divs">
+            <Link className="icon__title" to="/reviewsapp">
+              <h3>Reviews App</h3>
+            </Link>
+          </div>
+          <div className="col lightblue-background invisible-divs">
+            <Link className="icon__title" to="/toursapp">
+              <h3>Tours App</h3>
+            </Link>
+          </div>
           <div className="col lightblue-background invisible-divs">
             <Link className="icon__title" to="/toursapp">
               <h3>Tours App</h3>
