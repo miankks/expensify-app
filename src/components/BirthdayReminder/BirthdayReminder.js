@@ -13,7 +13,9 @@ export default function BirthdayReminder() {
       <section className="container">
         <h3>{people.length} birthdays today</h3>
         <List people={people} />
-        <button onClick={handleClick}>Clear all</button>
+        <button onClick={handleClick} className="birthday-btn">
+          Clear all
+        </button>
       </section>
     </main>
   );
