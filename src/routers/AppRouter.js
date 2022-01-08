@@ -34,6 +34,7 @@ import Index from '../components/HomePage';
 import BirthdayReminder from '../components/BirthdayReminder/BirthdayReminder';
 import ToursMainPage from '../components/NineProjects/Tours/ToursMainPage';
 import ReviewMain from '../components/NineProjects/Reviews/ReviewMain';
+import AccordianMain from '../components/NineProjects/Accordian/AccordianMain';
 
 export const history = createHistory();
 
@@ -70,6 +71,7 @@ const AppRouter = () => (
         <PrivateRoute path="/birthdayreminder" component={BirthdayReminder} />
         <PrivateRoute path="/toursapp" component={ToursMainPage} />
         <PrivateRoute path="/reviewsapp" component={ReviewMain} />
+        <PrivateRoute path="/accord" component={AccordianMain} />
         <Route path="/help" component={HelpPage} />
       </Switch>
     </div>

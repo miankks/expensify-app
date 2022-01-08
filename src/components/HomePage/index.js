@@ -65,11 +65,12 @@ export default class Index extends Component {
               <h3>Reviews App</h3>
             </Link>
           </div>
-          <div className="col lightgrey-background invisible-divs">
-            <Link className="icon__title" to="/birthdayreminder">
-              <h3>Birthday Reminder</h3>
+          <div className="col lightgrey-background">
+            <Link className="icon__title" to="/accord">
+              <h3>Accordian Question Answers</h3>
             </Link>
           </div>
+
           <div className="col lightblue-background invisible-divs">
             <Link className="icon__title" to="/toursapp">
               <h3>Tours App</h3>
