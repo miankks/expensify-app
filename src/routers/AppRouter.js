@@ -27,9 +27,6 @@ import Navbars from '../components/Bootstrap/CSSComponents/Navbars';
 import ListGroups from '../components/Bootstrap/CSSComponents/ListGroups';
 import Forms from '../components/Bootstrap/CSSComponents/Forms';
 import Weather from '../components/weatherApp/Weather';
-import Synchronousex from '../components/async/synchronousex';
-import Promises from '../components/async/promises';
-import Asyncawait from '../components/async/ayncawait';
 import Index from '../components/HomePage';
 import BirthdayReminder from '../components/BirthdayReminder/BirthdayReminder';
 import ToursMainPage from '../components/NineProjects/Tours/ToursMainPage';
@@ -45,7 +42,6 @@ const AppRouter = () => (
       <Switch>
         <PublicRoute path="/" component={LoginPage} exact={true} />
         <PrivateRoute path="/accord" component={AccordianMain} />
-        <PrivateRoute path="/asyncawait" component={Asyncawait} />
         <PrivateRoute path="/homepage" component={Index} />
         <PrivateRoute path="/birthdayreminder" component={BirthdayReminder} />
         <PrivateRoute path="/bootstrapheader" component={BootstrapHeader} />
@@ -67,9 +63,7 @@ const AppRouter = () => (
         <PrivateRoute path="/newhooks" component={HooksHeader} />
         <PrivateRoute path="/noteusestate" component={NoteApp} />
         <PrivateRoute path="/notesuseReducer" component={UseReducer} />
-        <PrivateRoute path="/promises" component={Promises} />
         <PrivateRoute path="/sizingborders" component={SizingBorders} />
-        <PrivateRoute path="/synchronousexample" component={Synchronousex} />
         <PrivateRoute path="/reviewsapp" component={ReviewMain} />
         <PrivateRoute path="/textalignmndisplay" component={TextAlignmntDisplay} />
         <PrivateRoute path="/toursapp" component={ToursMainPage} />
@@ -82,4 +76,6 @@ const AppRouter = () => (
 
 export default AppRouter;
 
-// <Header />
+// <PrivateRoute path="/asyncawait" component={Asyncawait} />
+// <PrivateRoute path="/promises" component={Promises} />
+// <PrivateRoute path="/synchronousexample" component={Synchronousex} />

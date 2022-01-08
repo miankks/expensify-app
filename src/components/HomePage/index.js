@@ -27,23 +27,6 @@ export default class Index extends Component {
         </div>
         <div className="col-container">
           <div className="col lightblue-background">
-            <Link className="icon__title" to="/synchronousexample">
-              <h3>Synchronous Calls</h3>
-            </Link>
-          </div>
-          <div className="col lightgrey-background">
-            <Link className="icon__title" to="/promises">
-              <h3>Promises</h3>
-            </Link>
-          </div>
-          <div className="col lightblue-background">
-            <Link className="icon__title" to="/asyncawait">
-              <h3>Async await</h3>
-            </Link>
-          </div>
-        </div>
-        <div className="col-container">
-          <div className="col lightblue-background">
             <Link className="icon__title" to="/weatherapp">
               <h3>Weather App</h3>
             </Link>
@@ -97,3 +80,21 @@ export default class Index extends Component {
     );
   }
 }
+
+// <div className="col-container">
+// <div className="col lightblue-background">
+//   <Link className="icon__title" to="/synchronousexample">
+//     <h3>Synchronous Calls</h3>
+//   </Link>
+// </div>
+// <div className="col lightgrey-background">
+//   <Link className="icon__title" to="/promises">
+//     <h3>Promises</h3>
+//   </Link>
+// </div>
+// <div className="col lightblue-background">
+//   <Link className="icon__title" to="/asyncawait">
+//     <h3>Async await</h3>
+//   </Link>
+// </div>
+// </div>
