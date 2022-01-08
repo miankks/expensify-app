@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { stocks } from './RAWMATERIAL';
+import { stocks } from './RAWMaterial';
 
 export default function Asyncawait() {
   let isShopOpen = false;

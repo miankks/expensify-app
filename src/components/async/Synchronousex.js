@@ -1,5 +1,5 @@
 import React from 'react';
-import { stocks } from './RAWMATERIAL';
+import { stocks } from './RAWMaterial';
 
 export default function Synchronousex() {
   const setCallbackMethod = () => {
