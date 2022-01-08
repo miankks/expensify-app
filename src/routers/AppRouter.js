@@ -81,5 +81,3 @@ const AppRouter = () => (
 );
 
 export default AppRouter;
-
-// <Header />

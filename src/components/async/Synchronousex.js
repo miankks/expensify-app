@@ -1,7 +1,7 @@
 import React from 'react';
-import { stocks } from './RAWMaterial';
+import { stocks } from './RawMaterial';
 
-export default function Synchronousex() {
+const Synchronousex = () => {
   const setCallbackMethod = () => {
     let order = (fruit_name, call_production) => {
       setTimeout(() => {
@@ -44,7 +44,9 @@ export default function Synchronousex() {
       {setCallbackMethod()}
     </div>
   );
-}
+};
+
+export default Synchronousex;
 
 //   const setConsole = () => {
 // console.log('1');

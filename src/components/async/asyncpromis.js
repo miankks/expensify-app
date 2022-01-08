@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { stocks } from './RAWMATERIAL';
 
 export default function Asyncpromise() {
   let isShopOpen = true;

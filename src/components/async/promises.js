@@ -1,5 +1,5 @@
 import React from 'react';
-import { stocks } from './RAWMaterial';
+import { stocks } from './RawMaterial';
 
 export default function Promises() {
   let isShopOpen = true;
