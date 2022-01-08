@@ -45,7 +45,6 @@ const AppRouter = () => (
       <Switch>
         <PublicRoute path="/" component={LoginPage} exact={true} />
         <PrivateRoute path="/accord" component={AccordianMain} />
-        <PrivateRoute path="/asyncawait" component={Asyncawait} />
         <PrivateRoute path="/homepage" component={Index} />
         <PrivateRoute path="/birthdayreminder" component={BirthdayReminder} />
         <PrivateRoute path="/bootstrapheader" component={BootstrapHeader} />
@@ -67,9 +66,7 @@ const AppRouter = () => (
         <PrivateRoute path="/newhooks" component={HooksHeader} />
         <PrivateRoute path="/noteusestate" component={NoteApp} />
         <PrivateRoute path="/notesuseReducer" component={UseReducer} />
-        <PrivateRoute path="/promises" component={Promises} />
         <PrivateRoute path="/sizingborders" component={SizingBorders} />
-        <PrivateRoute path="/synchronousexample" component={Synchronousex} />
         <PrivateRoute path="/reviewsapp" component={ReviewMain} />
         <PrivateRoute path="/textalignmndisplay" component={TextAlignmntDisplay} />
         <PrivateRoute path="/toursapp" component={ToursMainPage} />
@@ -81,3 +78,7 @@ const AppRouter = () => (
 );
 
 export default AppRouter;
+
+// <PrivateRoute path="/asyncawait" component={Asyncawait} />
+// <PrivateRoute path="/promises" component={Promises} />
+// <PrivateRoute path="/synchronousexample" component={Synchronousex} />
