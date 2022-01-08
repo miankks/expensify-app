@@ -35,6 +35,7 @@ import BirthdayReminder from '../components/BirthdayReminder/BirthdayReminder';
 import ToursMainPage from '../components/NineProjects/Tours/ToursMainPage';
 import ReviewMain from '../components/NineProjects/Reviews/ReviewMain';
 import AccordianMain from '../components/NineProjects/Accordian/AccordianMain';
+import FoodMenu from '../components/NineProjects/FoofMenu/FoodMenu';
 
 export const history = createHistory();
 
@@ -43,7 +44,10 @@ const AppRouter = () => (
     <div>
       <Switch>
         <PublicRoute path="/" component={LoginPage} exact={true} />
+        <PrivateRoute path="/accord" component={AccordianMain} />
+        <PrivateRoute path="/asyncawait" component={Asyncawait} />
         <PrivateRoute path="/homepage" component={Index} />
+        <PrivateRoute path="/birthdayreminder" component={BirthdayReminder} />
         <PrivateRoute path="/bootstrapheader" component={BootstrapHeader} />
         <PrivateRoute path="/buttons" component={Buttons} />
         <PrivateRoute path="/colorbackground" component={ColorBackground} />
@@ -52,27 +56,25 @@ const AppRouter = () => (
         <PrivateRoute path="/cleaninguseeffect" component={Notes} />
         <PrivateRoute path="/create" component={AddExpensePage} />
         <PrivateRoute path="/dashboard" component={ExpenseDashboardPage} />
-        <PrivateRoute path="/weatherapp" component={Weather} />
         <PrivateRoute path="/edit/:id" component={EditExpensePage} />
         <PrivateRoute path="/floatfixedposition" component={FloatFixedPosition} />
+        <PrivateRoute path="/foodmenu" component={FoodMenu} />
         <PrivateRoute path="/forms" component={Forms} />
+        <Route path="/help" component={HelpPage} />
         <PrivateRoute path="/listgroups" component={ListGroups} />
         <PrivateRoute path="/marginpadding" component={MarginPadding} />
         <PrivateRoute path="/navbars" component={Navbars} />
         <PrivateRoute path="/newhooks" component={HooksHeader} />
         <PrivateRoute path="/noteusestate" component={NoteApp} />
         <PrivateRoute path="/notesuseReducer" component={UseReducer} />
-        <PrivateRoute path="/sizingborders" component={SizingBorders} />
-        <PrivateRoute path="/typography" component={TypoGraphy} />
-        <PrivateRoute path="/textalignmndisplay" component={TextAlignmntDisplay} />
-        <PrivateRoute path="/synchronousexample" component={Synchronousex} />
         <PrivateRoute path="/promises" component={Promises} />
-        <PrivateRoute path="/asyncawait" component={Asyncawait} />
-        <PrivateRoute path="/birthdayreminder" component={BirthdayReminder} />
-        <PrivateRoute path="/toursapp" component={ToursMainPage} />
+        <PrivateRoute path="/sizingborders" component={SizingBorders} />
+        <PrivateRoute path="/synchronousexample" component={Synchronousex} />
         <PrivateRoute path="/reviewsapp" component={ReviewMain} />
-        <PrivateRoute path="/accord" component={AccordianMain} />
-        <Route path="/help" component={HelpPage} />
+        <PrivateRoute path="/textalignmndisplay" component={TextAlignmntDisplay} />
+        <PrivateRoute path="/toursapp" component={ToursMainPage} />
+        <PrivateRoute path="/typography" component={TypoGraphy} />
+        <PrivateRoute path="/weatherapp" component={Weather} />
       </Switch>
     </div>
   </Router>
