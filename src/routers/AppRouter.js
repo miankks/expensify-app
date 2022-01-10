@@ -33,6 +33,8 @@ import ToursMainPage from '../components/NineProjects/Tours/ToursMainPage';
 import ReviewMain from '../components/NineProjects/Reviews/ReviewMain';
 import AccordianMain from '../components/NineProjects/Accordian/AccordianMain';
 import FoodMenu from '../components/NineProjects/FoofMenu/FoodMenu';
+import TabMain from '../components/NineProjects/Tabs/TabsMain';
+import SliderMain from '../components/NineProjects/Slider/SliderMain';
 
 export const history = createHistory();
 
@@ -63,8 +65,10 @@ const AppRouter = () => (
         <PrivateRoute path="/newhooks" component={HooksHeader} />
         <PrivateRoute path="/noteusestate" component={NoteApp} />
         <PrivateRoute path="/notesuseReducer" component={UseReducer} />
+        <PrivateRoute path="/slider" component={SliderMain} />
         <PrivateRoute path="/sizingborders" component={SizingBorders} />
         <PrivateRoute path="/reviewsapp" component={ReviewMain} />
+        <PrivateRoute path="/tabjobs" component={TabMain} />
         <PrivateRoute path="/textalignmndisplay" component={TextAlignmntDisplay} />
         <PrivateRoute path="/toursapp" component={ToursMainPage} />
         <PrivateRoute path="/typography" component={TypoGraphy} />
