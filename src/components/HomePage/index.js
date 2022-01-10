@@ -60,14 +60,48 @@ export default class Index extends Component {
           </div>
         </div>
         <div className="col-container">
-          <div className="col lightblue-background invisible-divs">
-            <Link className="icon__title" to="/reviewsapp">
-              <h3>Reviews App</h3>
+          <div className="col lightblue-background">
+            <Link className="icon__title" to="/tabjobs">
+              <h3>Tabs</h3>
+            </Link>
+          </div>
+          <div className="col lightgrey-background">
+            <Link className="icon__title" to="/slider">
+              <h3>Slider</h3>
             </Link>
           </div>
           <div className="col lightblue-background invisible-divs">
             <Link className="icon__title" to="/toursapp">
               <h3>Tours App</h3>
+            </Link>
+          </div>
+        </div>
+        <div className="col-container">
+          <div className="col lightblue-background invisible-divs">
+            <Link className="icon__title" to="/tabjobs">
+              <h3>Tabs</h3>
+            </Link>
+          </div>
+          <div className="col lightgrey-background invisible-divs">
+            <Link className="icon__title" to="/slider">
+              <h3>Slider</h3>
+            </Link>
+          </div>
+          <div className="col lightblue-background invisible-divs">
+            <Link className="icon__title" to="/toursapp">
+              <h3>Tours App</h3>
+            </Link>
+          </div>
+        </div>
+        <div className="col-container">
+          <div className="col lightblue-background invisible-divs">
+            <Link className="icon__title" to="/tabjobs">
+              <h3>Tabs</h3>
+            </Link>
+          </div>
+          <div className="col lightgrey-background invisible-divs">
+            <Link className="icon__title" to="/slider">
+              <h3>Slider</h3>
             </Link>
           </div>
           <div className="col lightblue-background invisible-divs">
